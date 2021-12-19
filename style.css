@@ -25,6 +25,7 @@ body{
   align-items: center;
   width: 700px;
   height: 750px;
+  perspective: 1200px;
 }
 
 .card{
@@ -34,6 +35,7 @@ body{
   align-items: center;
   width: 450px;
   height: 600px;
+  transform-style: preserve-3d;
 }
 
 .card .card-bg{
@@ -41,6 +43,12 @@ body{
 }
 
 .card .card-bg img{
+  z-index: 1;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card .title{
   z-index: 2;
   position: absolute;
   top: 50px;
